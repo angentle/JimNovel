@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Page-Enter" content="revealTrans(Duration=3.0,Transition=12)">
+    <title>JimNovel-作家首页</title>
+    <link href="${ADMIN_TEMPLATE_BASE_PATH}/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+
+    <style type="text/css">
+        #header .header-content .header-content-img {
+            position: relative;
+            width: 970px;
+            padding-top: 40px;
+            margin: 0px auto -10%;
+        }
+
+        #header .header-content {
+            overflow: hidden;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #header .header-content .header-content-img {
+            position: relative;
+            width: 970px;
+            padding-top: 40px;
+            margin: 60px auto -10%;
+            height:450px;
+        }
+
+        #header .header-content .header-content-img .img-left {
+            position: absolute;
+            right: 50%;
+            top: 30%;
+            left: 0px;
+            z-index: 100;
+        }
+
+        #header .header-content .header-content-img .img-center {
+            position: relative;
+            z-index: 110;
+        }
+
+        #header .header-content .header-content-img .img-right {
+            right: 0px;
+            left: 35%;
+            position: absolute;
+            top: 30%;
+            z-index: 100;
+        }
+
+    </style>
+
+</head>
+
+<body class="gray-bg" http-equiv="page-enter" style="transition: all 1s;opacity: 0;" onload="document.body.style.opacity=1">
+<div class="wrapper wrapper-content">
+    <header id="header">
+
+        <div id="start" class="header-content">
+
+            <div class="container">
+
+                <div class="header-content-title">
+                    <h1 style="font-size: 40px;">开启你的创作之旅</span></h1>
+                    <p>JineMI小说网版权所有</p>
+                </div>
+
+                <div class="btn-section">
+                    <a href="article.htm" class="btn-custom smooth-scroll">点击开始创作</a>
+                </div>
+
+                <figure class="header-content-img">
+                    <div class="img-left">
+                        <img src="${ADMIN_TEMPLATE_BASE_PATH}/img/headerImgLeft.png" alt="Image Left" class="animation animated animation-fade-in-left" data-animation="animation-fade-in-left">
+                    </div>
+                    <div class="img-center">
+                        <img src="${ADMIN_TEMPLATE_BASE_PATH}/img/headerImgRight.png" alt="Image Center" class="animation animated animation-fade-in" data-animation="animation-fade-in" data-delay="400">
+                    </div>
+                    <div class="img-right">
+                        <img src="${ADMIN_TEMPLATE_BASE_PATH}/img/headerImgCenter.png" alt="Image Right" class="animation animated animation-fade-in-right" data-animation="animation-fade-in-right">
+                    </div>
+                </figure>
+
+            </div>
+        </div>
+    </header>
+
+</div>
+</body>
+<!-- 全局js -->
+<script src="${ADMIN_TEMPLATE_BASE_PATH}/js/jquery.min.js?v=2.1.4"></script>
+<script src="${ADMIN_TEMPLATE_BASE_PATH}/js/bootstrap.min.js?v=3.3.6"></script>
+<script>
+    $(document).ready(function(){
+        $("#header").fadeIn(3000);
+    })
+
+</script>
+</html>
